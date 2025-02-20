@@ -1,0 +1,154 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgb(219, 219, 219);
+    z-index: 100;
+}
+
+.left-section{
+    width: 140px;
+    display: flex;
+    align-items: center; 
+}
+.first-1{
+    height: 25px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.first-2{
+    height: 20px;
+}
+
+.middle-section{
+    flex: 1;
+    margin-left: 80px;
+    margin-right: 40px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.Sbox{
+    flex: 1;
+    height: 35px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(190, 190, 190);
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+.Sbox::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+
+}
+.middle2{
+    height: 39px;
+    width: 65px;
+    background-color: rgb(243, 243, 243);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(190, 190, 190);
+    margin-left: -1px;
+}
+.middle2-1{
+    height: 25px;
+    margin-top: 4px;
+}
+
+.middle2 .tooltip, 
+.middle3 .tooltip,
+.righttooltip .tooltip,
+.righttooltip1 .tooltip,
+.notification .tooltip{
+    position: absolute;
+    font-family: Roboto, Arial;
+    background-color: rgb(117, 117, 117);
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -40px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.middle2:hover .tooltip,
+.middle3:hover .tooltip,
+.righttooltip:hover .tooltip,
+.righttooltip1:hover .tooltip,
+.notification:hover .tooltip{
+    opacity: 1;
+}
+
+.middle2, 
+.middle3,
+.righttooltip
+.righttooltip1,
+.notification{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle3{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 10px;
+    background-color: rgb(247, 247, 247);
+}
+.middle3-1{
+    height: 24px;
+}
+
+.right-section{
+    width: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.right1{
+    height: 25px;
+}
+.right2{
+    height: 25px;
+}
+.right3{
+    height: 25px;
+}
+.right4{
+    height: 32px;
+    border-radius: 16px;
+}
+
+.notification-count{
+    position: absolute;
+    background-color: rgb(207, 1, 1);
+    color: white;
+    top: 2px;
+    right: 0;
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 50px;
+}
+
+
+
